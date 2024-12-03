@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnam Sai Mithun's Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container">
+            <h1>Pinnam Sai Mithun</h1>
+            <p>Java Developer | Full Stack Expertise</p>
+            <p>Location: Irving, Texas</p>
+            <p>Contact: <a href="mailto:saimithunui3@gmail.com">saimithunui3@gmail.com</a> | (214)-629-3504</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Professional Summary Section -->
+    <section id="summary">
+        <div class="container">
+            <h2>Professional Summary</h2>
+            <p>A dynamic and results-oriented Java Developer with 4+ years of IT experience, specializing in Java/J2EE, microservices, and cloud technologies. Proven track record in designing scalable solutions, optimizing performance, and delivering high-quality software systems for global clients like Cigna, American Express, and CenturyLink.</p>
+            <a href="file:///C:/Users/mithu/Downloads/Sai_Mithun_Java_Developer.pdf" class="cta-btn" target="_blank">View Resume</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With a passion for solving complex problems and crafting innovative solutions, I have established myself as a versatile developer proficient in full-stack development and enterprise-level applications.</p>
+            <h3>Education:</h3>
+            <ul>
+                <li>Master’s in Computer and Information Science - Southern Arkansas University (GPA: 3.70)</li>
+                <li>Bachelor’s in Electronics and Communication Engineering - Vidya Jyothi Institute of Technology (GPA: 8.90)</li>
+            </ul>
+            <h3>Certifications:</h3>
+            <ul>
+                <li>Exploratory Data Analysis with Seaborn (Coursera)</li>
+                <li>Build Your First Machine Learning Pipeline (Dataiku)</li>
+                <li>Using Basic Formulas and Functions in Microsoft Excel (Coursera)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section with Chart -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>My core expertise includes Java, Spring Boot, Microservices, AWS, Angular, and ReactJS.</p>
+            <div class="chart-container">
+                <canvas id="skills-chart"></canvas>
+            </div>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java (Core & Advanced), Python, PL/SQL</li>
+                <li><strong>Frameworks:</strong> Spring Boot, Hibernate, Angular 14, ReactJS</li>
+                <li><strong>Databases:</strong> MongoDB, Cassandra, Oracle, MySQL</li>
+                <li><strong>Tools:</strong> Jenkins, Maven, Gradle, Docker, Kubernetes</li>
+                <li><strong>Cloud Technologies:</strong> AWS (EC2, Lambda, S3, RDS), Azure</li>
+                <li><strong>Other Skills:</strong> RESTful Web Services, Microservices Architecture, Agile Methodologies</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <h3>End-to-End Data Pipeline for Healthcare (Cigna)</h3>
+            <p>Developed a microservices-based architecture using Spring Boot and integrated Apache Kafka for real-time data streaming, resulting in a 40% performance improvement.</p>
+            <p><strong>Technologies Used:</strong> Java 11, Spring Boot, Kubernetes, AWS, MongoDB, Angular 14</p>
+            <ul>
+                <li>Designed RESTful APIs to streamline data exchange between microservices.</li>
+                <li>Enhanced deployment automation using Jenkins pipelines and Docker containers.</li>
+                <li>Implemented secure authorization using Spring Security and OAuth2.</li>
+            </ul>
+
+            <h3>Customer Transaction Analytics Dashboard (American Express)</h3>
+            <p>Built a real-time dashboard using ReactJS to enhance fraud detection by 40%, leveraging machine learning models for anomaly detection.</p>
+            <p><strong>Technologies Used:</strong> ReactJS, Node.js, AWS, Python, Tableau</p>
+            <ul>
+                <li>Developed a responsive interface to display transaction analytics.</li>
+                <li>Integrated AWS Lambda for real-time transaction monitoring.</li>
+                <li>Improved data accuracy by implementing robust anomaly detection algorithms.</li>
+            </ul>
+
+            <h3>Network Performance Monitoring System (CenturyLink)</h3>
+            <p>Designed a network health monitoring tool to reduce outage response times by 40% and improve SLA compliance by 25%.</p>
+            <p><strong>Technologies Used:</strong> Angular, Node.js, Cassandra, Docker, Prometheus, Grafana</p>
+            <ul>
+                <li>Created real-time dashboards with Angular and Grafana for network analytics.</li>
+                <li>Automated performance metric collection using Prometheus and RabbitMQ.</li>
+                <li>Implemented machine learning models to predict and prevent network downtime.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to connect or learn more about my work, feel free to reach out to me!</p>
+            <form id="contact-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="cta-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

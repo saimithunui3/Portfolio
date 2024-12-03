@@ -1,0 +1,162 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+header {
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 3px solid #007bff;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+header a.cta-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+section#about, section#skills, section#projects {
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cta-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Skills Chart */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
